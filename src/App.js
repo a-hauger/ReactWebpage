@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import NavBarContainer from './NavBarContainer.js';
+import NavBarContainer from './NavbarComponents/NavBarContainer.js';
 import AppSlideShow from './SlideshowComponents/AppSlideShow.js';
+import Galleries from './Galleries.js';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
       return(
         <div>
              <NavBarContainer />
-             <AppSlideShow />
+             <Galleries />
              </div>
       );
   }
@@ -24,7 +25,7 @@ export default App;
  ************/
 
 //import LandingPage from './LandingPage.js';
-//import Galleries from './Galleries.js';
+//
 //
 //import Slideshow from './SlideshowComponents/Slideshow.js';
 

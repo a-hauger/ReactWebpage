@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import GalleryBoxContents from './GalleryBoxContent.js';
-import buffalo from './images/Buffalo.jpg';
+//import buffalo from './images/Buffalo.jpg';
 
+//GalleryBox stores the information to make a poloroid shaped gallery box
 class GalleryBox extends Component {
     constructor(props){
         super(props);
         
         this.state={
-        textAlign:"center",
-        margin: "20px 20px 20px 20px",
-        width: "270px",
-        height: "300px",
-        background:"#f9f9f6",
-        display:"inline-block"
+            height:"30vw",
+            width:"31vw",
+            backgroundColor:"white",
+            margin: "15px",
+            textAlign: "center",
         }
     }
 	render(){
 		return(
-               <div style={this.state}>
-                    <GalleryBoxContents>{this.props.children}</GalleryBoxContents>
+               <div>
+                   <section style={this.state}>
+                        <GalleryBoxContents />
+                   </section>
                </div>
 		);
 	}

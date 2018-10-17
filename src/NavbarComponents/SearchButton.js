@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import searchButton from './images/Search_Button.png';
+import searchButton from '../images/Search_Button.png';
 
 class SearchButton extends Component {
     /*

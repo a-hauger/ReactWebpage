@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import picture from './images/Buffalo.jpg';
 
+//GalleryBoxContents holds an image that fits into a GalleryBox
+//GalleryBox is the calling component
 class GalleryBoxContents extends Component {
     constructor(props){
         super(props);
@@ -11,8 +14,10 @@ class GalleryBoxContents extends Component {
     
 	render(){
 		return(
-               <div style={this.props.state} onClick={this.props.onClick} display="block">
-               <img src={this.props.children} display="block" height="250px"/>
+               <div>
+               <section bottom="20px">
+               <img src={picture} alt="" height="150vw"/>
+               </section>
 			</div>
 		);
 	}

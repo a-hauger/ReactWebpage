@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import menuButton from './images/Menu_Button.png';
+import menuButton from '../images/Menu_Button.png';
 
 class MenuButton extends Component {
     /*

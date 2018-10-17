@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
 import GalleryBox from './GalleryBox.js';
-import buffalo from './images/Buffalo.jpg';
+//import buffalo from './images/Buffalo.jpg';
 
+//The GallerBoxContainer component is a div that will contain
+//up to five poloroid shaped gallery boxes
 class GalleryBoxContainer extends Component{
 	constructor(props){
 		super(props);
 
 		this.state={
-        width:"100%",
-        backgroundColor:"white"
+            display:"flex",
+            flexFlow: "row wrap",
+            justifyContent: "center",
+            alignItems: "center"
 		}
 	}
-
+//eventually I want a render() method with five gallery boxes
+//one box for each of the five most recent galleries
 	render(){
 		return(
-            <div style={this.state}>
-               <GalleryBox onClick={this.props.changePage}>{buffalo}</GalleryBox>
-               <GalleryBox onClick={this.props.changePage}>{buffalo}</GalleryBox>
-               <GalleryBox onClick={this.props.changePage}>{buffalo}</GalleryBox>
-               <GalleryBox onClick={this.props.changePage}>{buffalo}</GalleryBox>
+            <div className="gallery-container">
+               <GalleryBox />
+               <GalleryBox />
+               <GalleryBox />
+               <GalleryBox />
 			</div>
 		);
 	}

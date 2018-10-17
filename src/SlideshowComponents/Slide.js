@@ -17,7 +17,7 @@ class Slide extends Component{
 
         return(
             <div className="slide">
-               <img src={picture1} width="20%"/>
+               <img src={picture1} width="100%"/>
             </ div>
         );
 	}
