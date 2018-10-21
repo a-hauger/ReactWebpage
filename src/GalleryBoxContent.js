@@ -8,16 +8,24 @@ class GalleryBoxContents extends Component {
         super(props);
         
         this.state={
-
+        header:{margin:"1em 0em 0em 0em"},
+        remainder:{margin:"0em"},
+        test:{
+            top:"20%",
+            backgroundColor:"green"
+            }
         };
     }
     
 	render(){
 		return(
                <div>
-               <section bottom="20px">
-               <img src={picture} alt="" height="150vw"/>
-               </section>
+                    <p style={this.state.test}>
+                       <img src={picture} alt="" height="150vw"/>
+                       <p style={this.state.header}>Gallery Name</p>
+                       <p style={this.state.remainder}>Shoot Date(s)</p>
+                       <p style={this.state.remainder}>Location(s)</p>
+                   </p>
 			</div>
 		);
 	}

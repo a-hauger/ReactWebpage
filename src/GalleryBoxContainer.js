@@ -19,10 +19,7 @@ class GalleryBoxContainer extends Component{
 //one box for each of the five most recent galleries
 	render(){
 		return(
-            <div className="gallery-container">
-               <GalleryBox />
-               <GalleryBox />
-               <GalleryBox />
+            <div className="gallery-container" style={this.state}>
                <GalleryBox />
 			</div>
 		);

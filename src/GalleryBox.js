@@ -8,8 +8,10 @@ class GalleryBox extends Component {
         super(props);
         
         this.state={
-            height:"30vw",
-            width:"31vw",
+            height:"20vw",
+            width:"15vw",
+            minWidth:"18vw",
+            minHeight:"15vw",
             backgroundColor:"white",
             margin: "15px",
             textAlign: "center",
