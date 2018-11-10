@@ -12,12 +12,16 @@ import PoloroidContainer from './PoloroidContainer.js';
  DESCRIPTION:
  The state contains an array of objects named Images.  This Images array is passed into an instance of the Poloroid Container Component as the prop poloroidImages.
  
+ STYLE:
+ >This component has no unique style
+ 
  TO DO:
  >Change the images objects from a static id, url and title to a GET statement that gathers the 8 most recent gallery objects of a designated type
  >Remove that GET statement from the state?
  
  LAST MODIFIED:
  19NOV18 - Test rendering completed and functional documentation listed
+ 19NOV18 - Added style documentation
  **************END DOCUMENTATION**************/
 
 export default class PoloroidGallerySelector extends Component {

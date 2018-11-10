@@ -5,10 +5,7 @@ import './App.css';
 class App extends Component {
     constructor(props){
         super(props);
-        
-        //if I want finer details, I change the style of that specific element
-        //if I want to give detail to the entire poloroid, I change the style of the <figure /> tag
-        //if I want to manipulate how the poloroids appear on the screen, I change the div
+
     }
   render() {
       return(
